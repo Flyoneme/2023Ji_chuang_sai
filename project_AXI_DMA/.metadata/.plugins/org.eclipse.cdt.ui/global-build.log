@@ -1,0 +1,1461 @@
+13:42:45 **** Build of project AXI_DMA_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_6/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_6/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:54:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+13:42:55 **** Clean-only build of configuration Debug for project AXI_DMA ****
+make clean 
+rm -rf  ./src/mian.o  ./src/mian.d  AXI_DMA.elf.size  AXI_DMA.elf
+' '
+13:42:56 **** Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+13:43:32 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:43:49 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:44:32 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+13:44:44 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:47:45 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:47:58 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:48:28 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:54:03 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+13:54:07 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:56:25 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+13:56:57 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:57:13 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:57:34 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:57:52 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+14:57:55 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:01:05 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:07:03 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:08:12 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:11:30 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:45:50: error: invalid suffix "_0000" on integer constant
+ #define MEM_1_BASE_ADDR       (DDR_1_BASE_ADDR + 0x2000_0000)             //0x21000000 使用到的该部分DDR内存作为存储器 (DMA0用到的存储基地址)
+                                                  ^
+../src/mian.c:46:32: note: in expansion of macro 'MEM_1_BASE_ADDR'
+ #define TX1_BUFFER_BASE       (MEM_1_BASE_ADDR + 0x0100000)            //0x22000000 使用到的该部分DDR内存的作为写DDR起始地址
+                                ^~~~~~~~~~~~~~~
+../src/mian.c:84:29: note: in expansion of macro 'TX1_BUFFER_BASE'
+     tx1_buffer_ptr = (u8 *) TX1_BUFFER_BASE;//将使用的DDR写空间的基地址赋给tx_buffer_ptr
+                             ^~~~~~~~~~~~~~~
+../src/mian.c:45:50: error: invalid suffix "_0000" on integer constant
+ #define MEM_1_BASE_ADDR       (DDR_1_BASE_ADDR + 0x2000_0000)             //0x21000000 使用到的该部分DDR内存作为存储器 (DMA0用到的存储基地址)
+                                                  ^
+../src/mian.c:47:32: note: in expansion of macro 'MEM_1_BASE_ADDR'
+ #define RX1_BUFFER_BASE       (MEM_1_BASE_ADDR + 0x0300000)            //0x24000000 使用到的该部分DDR内存的作为读DDR起始地址
+                                ^~~~~~~~~~~~~~~
+../src/mian.c:85:29: note: in expansion of macro 'RX1_BUFFER_BASE'
+     rx1_buffer_ptr = (u8 *) RX1_BUFFER_BASE;//将使用的DDR读空间的基地址赋给rx_buffer_ptr
+                             ^~~~~~~~~~~~~~~
+../src/mian.c: In function 'check_data_dam1':
+../src/mian.c:45:50: error: invalid suffix "_0000" on integer constant
+ #define MEM_1_BASE_ADDR       (DDR_1_BASE_ADDR + 0x2000_0000)             //0x21000000 使用到的该部分DDR内存作为存储器 (DMA0用到的存储基地址)
+                                                  ^
+../src/mian.c:47:32: note: in expansion of macro 'MEM_1_BASE_ADDR'
+ #define RX1_BUFFER_BASE       (MEM_1_BASE_ADDR + 0x0300000)            //0x24000000 使用到的该部分DDR内存的作为读DDR起始地址
+                                ^~~~~~~~~~~~~~~
+../src/mian.c:272:24: note: in expansion of macro 'RX1_BUFFER_BASE'
+     rx_packet = (u8 *) RX1_BUFFER_BASE;//把DDR读缓存的地址赋值给rx_packet
+                        ^~~~~~~~~~~~~~~
+make: *** [src/mian.o] 错误 1
+15:11:34 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+15:12:08 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+15:18:07 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:19:25 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:20:22 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:24:27 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:24:32 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:00:07 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:00:18 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40384	   3888	  26424	  70696	  11428	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:18:05 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40448	   3888	  26424	  70760	  11468	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:18:21 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:18:31 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:18:54 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:21:49 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:353:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+../src/mian.c:353:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/mian.o] 错误 1
+16:21:57 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:323:6: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+      tx_done = 1;
+      ^~~~~~~
+      tx_1_done
+../src/mian.c:323:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:353:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+make: *** [src/mian.o] 错误 1
+16:23:23 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+     tx_done = 0;
+     ^~~~~~~
+     tx_1_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_done' undeclared (first use in this function); did you mean 'tx_done'?
+     rx_done = 0;
+     ^~~~~~~
+     tx_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:323:6: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+      tx_done = 1;
+      ^~~~~~~
+      tx_1_done
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:353:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+make: *** [src/mian.o] 错误 1
+16:23:49 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:206:13: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     while (!tx_0_done && !rx_0_done && !error0)
+             ^~~~~~~~~
+             tx_done
+../src/mian.c:206:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:206:27: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     while (!tx_0_done && !rx_0_done && !error0)
+                           ^~~~~~~~~
+                           tx_0_done
+make: *** [src/mian.o] 错误 1
+16:27:59 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:206:13: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     while (!tx_0_done && !rx_0_done && !error0)
+             ^~~~~~~~~
+             tx_done
+../src/mian.c:206:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:206:27: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     while (!tx_0_done && !rx_0_done && !error0)
+                           ^~~~~~~~~
+                           tx_0_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:310:6: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+      error = 1;
+      ^~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:28:27 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:209:9: error: 'error0' undeclared (first use in this function); did you mean 'error1'?
+     if (error0&&error1) {
+         ^~~~~~
+         error1
+../src/mian.c:209:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:340:6: error: 'error0' undeclared (first use in this function); did you mean 'error1'?
+      error0 = 1;
+      ^~~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:30:33 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:209:9: error: 'error0' undeclared (first use in this function); did you mean 'error'?
+     if (error0&&error1) {
+         ^~~~~~
+         error
+../src/mian.c:209:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:209:17: error: 'error1' undeclared (first use in this function); did you mean 'error0'?
+     if (error0&&error1) {
+                 ^~~~~~
+                 error0
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:340:6: error: 'error0' undeclared (first use in this function); did you mean 'error'?
+      error0 = 1;
+      ^~~~~~
+      error
+make: *** [src/mian.o] 错误 1
+16:32:01 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:157:5: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+     error   = 0;
+     ^~~~~
+     error1
+../src/mian.c:157:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:310:6: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+      error = 1;
+      ^~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:32:06 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:206:37: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+     while (!tx_done && !rx_done && !error)
+                                     ^~~~~
+                                     error1
+../src/mian.c:206:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:310:6: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+      error = 1;
+      ^~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:32:09 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:206:37: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+     while (!tx_done && !rx_done && !error)
+                                     ^~~~~
+                                     error1
+../src/mian.c:206:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:310:6: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+      error = 1;
+      ^~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:32:15 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:211:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:310:6: error: 'error' undeclared (first use in this function); did you mean 'error1'?
+      error = 1;
+      ^~~~~
+      error1
+make: *** [src/mian.o] 错误 1
+16:32:29 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:211:39: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+                 "receive%s done\r\n", tx_0_done ? "" : " not",
+                                       ^~~~~~~~~
+                                       tx_done
+../src/mian.c:211:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:212:19: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+                   rx_0_done ? "" : " not");
+                   ^~~~~~~~~
+                   tx_0_done
+make: *** [src/mian.o] 错误 1
+16:32:50 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40448	   3888	  26424	  70760	  11468	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:32:53 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:35:35 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40448	   3888	  26424	  70760	  11468	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:40:05 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:41:01 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:41:06 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:41:12 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:41:51 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:42:00 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:42:03 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+make: *** [src/mian.o] 错误 1
+16:42:14 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+../src/mian.c:208:47: error: expected ')' before '!' token
+     while (!tx_0_done && !rx_0_done && !error0!tx_1_done && !rx_1_done && !error1)
+                                               ^
+make: *** [src/mian.o] 错误 1
+16:42:29 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+../src/mian.c:208:51: error: 'tx_1_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     while (!tx_0_done && !rx_0_done && !error0 &&!tx_1_done && !rx_1_done && !error1)
+                                                   ^~~~~~~~~
+                                                   tx_0_done
+../src/mian.c:208:65: error: 'rx_1_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+     while (!tx_0_done && !rx_0_done && !error0 &&!tx_1_done && !rx_1_done && !error1)
+                                                                 ^~~~~~~~~
+                                                                 tx_1_done
+make: *** [src/mian.o] 错误 1
+16:42:45 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:155:5: error: 'tx_0_done' undeclared (first use in this function); did you mean 'tx_done'?
+     tx_0_done = 0;
+     ^~~~~~~~~
+     tx_done
+../src/mian.c:155:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:156:5: error: 'rx_0_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     rx_0_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+../src/mian.c:158:6: error: 'tx_1_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+      tx_1_done = 0;
+      ^~~~~~~~~
+      tx_0_done
+../src/mian.c:159:6: error: 'rx_1_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+      rx_1_done = 0;
+      ^~~~~~~~~
+      tx_1_done
+make: *** [src/mian.o] 错误 1
+16:43:02 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:158:5: error: 'tx_1_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+     tx_1_done = 0;
+     ^~~~~~~~~
+     tx_0_done
+../src/mian.c:158:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:159:5: error: 'rx_1_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+     rx_1_done = 0;
+     ^~~~~~~~~
+     tx_1_done
+../src/mian.c:213:39: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+                 "receive%s done\r\n", tx_done ? "" : " not",
+                                       ^~~~~~~
+                                       tx_1_done
+../src/mian.c:214:19: error: 'rx_done' undeclared (first use in this function); did you mean 'tx_done'?
+                   rx_done ? "" : " not");
+                   ^~~~~~~
+                   tx_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:325:6: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_0_done'?
+      tx_done = 1;
+      ^~~~~~~
+      tx_0_done
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:355:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_0_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_0_done
+make: *** [src/mian.o] 错误 1
+16:43:06 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:213:39: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+                 "receive%s done\r\n", tx_done ? "" : " not",
+                                       ^~~~~~~
+                                       tx_1_done
+../src/mian.c:213:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c:214:19: error: 'rx_done' undeclared (first use in this function); did you mean 'tx_done'?
+                   rx_done ? "" : " not");
+                   ^~~~~~~
+                   tx_done
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:325:6: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+      tx_done = 1;
+      ^~~~~~~
+      tx_1_done
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:355:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+make: *** [src/mian.o] 错误 1
+16:43:23 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'tx_intr_handler':
+../src/mian.c:325:6: error: 'tx_done' undeclared (first use in this function); did you mean 'tx_1_done'?
+      tx_done = 1;
+      ^~~~~~~
+      tx_1_done
+../src/mian.c:325:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:355:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+make: *** [src/mian.o] 错误 1
+16:43:31 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'rx_intr_handler':
+../src/mian.c:355:9: error: 'rx_done' undeclared (first use in this function); did you mean 'rx_1_done'?
+         rx_done = 1;
+         ^~~~~~~
+         rx_1_done
+../src/mian.c:355:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/mian.o] 错误 1
+16:43:36 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:04 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:17 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:22 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:32 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:51 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:45:53 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:46:33 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:46:43 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:46:49 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:46:53 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40512	   3888	  26424	  70824	  114a8	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:47:44 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:217:51: error: stray '\243' in program
+                 "receive%s %s done\r\n", tx_0_done，tx_1_done ? "" : " not",
+                                                   ^
+../src/mian.c:217:52: error: stray '\254' in program
+                 "receive%s %s done\r\n", tx_0_done，tx_1_done ? "" : " not",
+                                                    ^
+../src/mian.c:217:53: error: expected ')' before 'tx_1_done'
+                 "receive%s %s done\r\n", tx_0_done，tx_1_done ? "" : " not",
+                                                     ^~~~~~~~~
+make: *** [src/mian.o] 错误 1
+16:48:04 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+../src/mian.c: In function 'main':
+../src/mian.c:217:51: error: stray '\243' in program
+                 "receive%s %s done\r\n", tx_0_done， ? "" : " not",
+                                                   ^
+../src/mian.c:217:52: error: stray '\254' in program
+                 "receive%s %s done\r\n", tx_0_done， ? "" : " not",
+                                                    ^
+make: *** [src/mian.o] 错误 1
+16:48:20 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40516	   3888	  26424	  70828	  114ac	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:48:31 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:48:33 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+16:48:45 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:49:05 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:49:52 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+17:01:36 **** Incremental Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:07:00 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+17:07:54 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '
+17:08:26 **** Auto Build of configuration Debug for project AXI_DMA ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/mian.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mian.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXI_DMA_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mian.d" -MT"src/mian.o" -o "src/mian.o" "../src/mian.c"
+'Finished building: ../src/mian.c'
+' '
+'Building target: AXI_DMA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXI_DMA_bsp/ps7_cortexa9_0/lib -o "AXI_DMA.elf"  ./src/mian.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXI_DMA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXI_DMA.elf  |tee "AXI_DMA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40644	   3888	  26424	  70956	  1152c	AXI_DMA.elf
+'Finished building: AXI_DMA.elf.size'
+' '

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Mar  5 09:50:00 2023
+# Process ID: 58836
+# Current directory: D:/vivado_project/ps_embeded_system/project_AXI_DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent57364 D:\vivado_project\ps_embeded_system\project_AXI_DMA\project_AXI_DMA.xpr
+# Log file: D:/vivado_project/ps_embeded_system/project_AXI_DMA/vivado.log
+# Journal file: D:/vivado_project/ps_embeded_system/project_AXI_DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/ps_embeded_system/project_AXI_DMA/project_AXI_DMA.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado_project/ps_embeded_system/project_AXI_DMA/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}
+launch_sdk -workspace D:/vivado_project/ps_embeded_system/project_AXI_DMA/project_AXI_DMA.sdk -hwspec D:/vivado_project/ps_embeded_system/project_AXI_DMA/project_AXI_DMA.sdk/system_wrapper.hdf

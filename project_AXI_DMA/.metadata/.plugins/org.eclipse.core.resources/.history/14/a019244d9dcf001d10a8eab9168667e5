@@ -1,0 +1,432 @@
+/*
+ * mian.c
+ *
+ *  Created on: 2023年3月28日
+ *      Author: PC
+ */
+/***********头文件****************/
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+/***********实验任务**************/
+//配置两个DMA
+/*****************************系统参数********************************/
+#define RESET_TIMEOUT_COUNTER   10000                                 //复位时间
+#define TEST_START_VALUE        0x00                                  //测试起始值1
+#define MAX_PKT_LEN             0x100                                 //发送包长度,stream流的数据长度256，如果AXIfull的突发长度比较小，那么就需要分几次突发传输来完成包数据的传输
+
+/************************** 函数声明 ******************************/
+static int check_data_dam0(int length, u8 start_value);//检查写入数据与读取数据是否一致
+static int check_data_dam1(int length, u8 start_value);//检查写入数据与读取数据是否一致
+static void tx_intr_handler(void *callback);//写完成的中断处理函数
+static void rx_intr_handler(void *callback);//读完成的中断处理函数
+static int setup_intr_system(XScuGic * int_ins_ptr, XAxiDma * axidma_ptr,//配置中断系统
+        u16 tx_intr_id, u16 rx_intr_id);
+static void disable_intr_system(XScuGic * int_ins_ptr, u16 tx_intr_id,   //除能中断系统
+        u16 rx_intr_id);
+
+/**************************DMA_0参数设置 *****************************/
+#define DMA_DEV_0_ID          XPAR_AXIDMA_0_DEVICE_ID                  //DAM_0器件ID
+#define RX_INTR_0_ID          XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID //DMA_0接收中断ID
+#define TX_INTR_0_ID          XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID //DMA_0接收中断ID
+#define DDR_0_BASE_ADDR       XPAR_PS7_DDR_0_S_AXI_BASEADDR            //0x00100000 DDR的起始地址(DMA0用到的)
+//定义一个存储器
+#define MEM_0_BASE_ADDR       (DDR_0_BASE_ADDR + 0x1000000)            //0x01100000 使用到的该部分DDR内存作为存储器 (DMA0用到的存储基地址)
+#define TX0_BUFFER_BASE      (MEM_0_BASE_ADDR + 0x0100000)            //0x01200000 使用到的该部分DDR内存的作为写DDR起始地址
+#define RX0_BUFFER_BASE      (MEM_0_BASE_ADDR + 0x0300000)            //0x01400000 使用到的该部分DDR内存的作为读DDR起始地址
+
+/**************************DMA_1参数设置 *****************************/
+#define DMA_DEV_1_ID          XPAR_AXI_DMA_1_DEVICE_ID                  //DAM_1器件ID
+#define RX_INTR_1_ID          XPAR_FABRIC_AXIDMA_1_S2MM_INTROUT_VEC_ID  //DMA_1接收中断ID
+#define TX_INTR_1_ID          XPAR_FABRIC_AXIDMA_1_MM2S_INTROUT_VEC_ID  //DMA_1接收中断ID
+#define DDR_1_BASE_ADDR       XPAR_PS7_DDR_0_S_AXI_BASEADDR             //0x00100000 DDR的起始地址(DMA0用到的)
+//定义一个存储器
+#define MEM_1_BASE_ADDR       (DDR_1_BASE_ADDR + 0x20000000)             //0x21000000 使用到的该部分DDR内存作为存储器 (DMA0用到的存储基地址)
+#define TX1_BUFFER_BASE       (MEM_1_BASE_ADDR + 0x0100000)            //0x20200000 使用到的该部分DDR内存的作为写DDR起始地址
+#define RX1_BUFFER_BASE       (MEM_1_BASE_ADDR + 0x0300000)            //0x20400000 使用到的该部分DDR内存的作为读DDR起始地址
+
+
+/**************************中断控制器*********************************/
+#define INTC_DEVICE_0_ID      XPAR_SCUGIC_SINGLE_DEVICE_ID             //中断器件ID
+static XScuGic intc;         //中断控制器的实例，结构体包含与中断控制器有关的参数
+
+
+/**************************DMA_0变量定义 *****************************/
+static XAxiDma axidma0;       //XAxiDma实例，结构体包含与AXIDMA有关的参数
+volatile int tx_0_done;      //发送完成标志
+volatile int rx_0_done;      //接收完成标志
+volatile int error0;         //传输出错标志
+/**************************DMA_1变量定义 *****************************/
+static XAxiDma axidma1;       //XAxiDma实例，结构体包含与AXIDMA有关的参数
+volatile int tx_1_done;      //发送完成标志
+volatile int rx_1_done;      //接收完成标志
+volatile int error1;         //传输出错标志
+
+
+
+/************************** main *****************************/
+int main(void)
+{
+    int i;                  //定义一个整型变量i
+    int status;             //定义一个整型变量status
+    int status1;            //定义一个整型变量status
+    u8 value;               //定义一个8位的无符号数value
+    u8 *tx0_buffer_ptr;      //定义一个8位的无符号指针变量，用于索引写DDR的地址
+    u8 *rx0_buffer_ptr;      //定义一个8位的无符号指针变量，用于索引读DDR的地址
+    u8 *tx1_buffer_ptr;      //定义一个8位的无符号指针变量，用于索引写DDR的地址
+    u8 *rx1_buffer_ptr;      //定义一个8位的无符号指针变量，用于索引读DDR的地址
+    XAxiDma_Config *config;
+    XAxiDma_Config *config1;
+
+    tx0_buffer_ptr = (u8 *) TX0_BUFFER_BASE;//将使用的DDR写空间的基地址赋给tx_buffer_ptr
+    rx0_buffer_ptr = (u8 *) RX0_BUFFER_BASE;//将使用的DDR读空间的基地址赋给rx_buffer_ptr
+    tx1_buffer_ptr = (u8 *) TX1_BUFFER_BASE;//将使用的DDR写空间的基地址赋给tx_buffer_ptr
+    rx1_buffer_ptr = (u8 *) RX1_BUFFER_BASE;//将使用的DDR读空间的基地址赋给rx_buffer_ptr
+
+    xil_printf("\r\n--- Entering main1() --- \r\n");//打印文字信息，进入主函数
+
+//寻找器件信息
+    config = XAxiDma_LookupConfig(DMA_DEV_0_ID); //寻找DMA0实例的硬件信息
+    config1 = XAxiDma_LookupConfig(DMA_DEV_1_ID);//寻找DMA1实例的硬件信息
+    //XAxiDma_LookupConfig函数
+    //@param  设备ID号
+    //@return  返回一个XAxiDma_Config类型的结构体指针
+
+    //判断是否找到DMA实例的硬件信息
+    if (!config) {
+        xil_printf("No config found for %d\r\n", DMA_DEV_0_ID);
+        return XST_FAILURE;
+    }
+    if (!config1) {
+            xil_printf("No config found for %d\r\n", DMA_DEV_1_ID);
+            return XST_FAILURE;
+        }
+
+//初始化DMA引擎
+    status = XAxiDma_CfgInitialize(&axidma0, config);//初始化DMA引擎
+    status1 = XAxiDma_CfgInitialize(&axidma1, config1);//初始化DMA引擎
+    //XAxiDma_CfgInitialize函数
+    //@param  DMA实例的指针
+    //@param  XAxiDma_Config类型的结构体指针
+    //@return XST_SUCCESS:意味着初始化成功
+
+    //判断初始化是否成功
+    if (status != XST_SUCCESS) {
+        xil_printf("Initialization failed %d\r\n", status);
+        return XST_FAILURE;
+    }
+    if (status1 != XST_SUCCESS) {
+            xil_printf("Initialization failed %d\r\n", status);
+            return XST_FAILURE;
+        }
+
+    //判断DMA是否使能SG模式
+    if (XAxiDma_HasSg(&axidma0)) {//判断是否使能SG模式
+        xil_printf("Device configured as SG mode \r\n");
+        return XST_FAILURE;
+    }
+    if (XAxiDma_HasSg(&axidma1)) {//判断是否使能SG模式
+            xil_printf("Device configured as SG mode \r\n");
+            return XST_FAILURE;
+        }
+
+//建立中断系统
+    status = setup_intr_system(&intc, &axidma0, TX_INTR_0_ID, RX_INTR_0_ID);
+    status1 = setup_intr_system(&intc, &axidma1, TX_INTR_1_ID, RX_INTR_1_ID);
+    //setup_intr_system函数
+    //  @param   指向XScuGic实例的指针
+    //  @param   指向DMA引擎实例的指针
+    //  @param   TX通道中断ID
+    //  @param   RX通道中断ID
+    //  @return：成功返回XST_SUCCESS，否则返回XST_FAILURE
+
+    //判断建立中断是否成功
+    if (status != XST_SUCCESS) {
+        xil_printf("Failed intr setup\r\n");
+        return XST_FAILURE;
+    }
+    if (status1 != XST_SUCCESS) {
+            xil_printf("Failed intr setup\r\n");
+            return XST_FAILURE;
+       }
+
+    //初始化标志信号
+    tx_0_done = 0;
+    rx_0_done = 0;
+    error0   = 0;
+    tx_1_done = 0;
+    rx_1_done = 0;
+    error1   = 0;
+
+    //写数据到DDR中：把用于测试的数据存入指针变量中
+    value = TEST_START_VALUE;//初始数据位0x0
+    for (i = 0; i < MAX_PKT_LEN; i++) {
+        tx0_buffer_ptr[i] = value;    //对DDR内存赋值
+        tx1_buffer_ptr[i] = value;  //对DDR内存赋值
+        value = (value + 1) & 0xFF;   //只取八位
+    }
+    //由于赋值后，数据可能还缓存在CACHE中，没有写入到DDR中，Xil_DCacheFlushRange使用是为了确认数据写入了DDR
+    Xil_DCacheFlushRange((UINTPTR) tx0_buffer_ptr, MAX_PKT_LEN);   //刷新Data Cache
+    Xil_DCacheFlushRange((UINTPTR) tx1_buffer_ptr, MAX_PKT_LEN);   //刷新Data Cache
+
+//开启DMA的简单传输模式
+    //开启写通道:DMA的MM2S:即把DDR内的数据输出到外设（本实验中外设是DATA_FIFO）,tx0_buffer_ptr是DDR写数据的起始地址
+    status = XAxiDma_SimpleTransfer(&axidma0, (UINTPTR) tx0_buffer_ptr, MAX_PKT_LEN, XAXIDMA_DMA_TO_DEVICE);//tx0_buffer_ptr对应于TX0_BUFFER_BASE
+    status1 = XAxiDma_SimpleTransfer(&axidma1, (UINTPTR) tx1_buffer_ptr, MAX_PKT_LEN, XAXIDMA_DMA_TO_DEVICE);
+    //XAxiDma_SimpleTransfer函数
+    //@param   指向驱动实力的指针
+    //@param   源端/目的端的缓存器的地址（这里是源端），这里就是指针：起始地址
+    //@param   传输的数据长度：包长度
+    //@param   DMA的传输方向
+    //@return  XST_SUCCESS：成功
+    //判断写通道是否打开
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+    if (status1 != XST_SUCCESS) {
+            return XST_FAILURE;
+        }
+
+    //开启读通道:DMA的S2MM:即把外设的数据传输到DDR（本实验中外设是DATA_FIFO），rx0_buffer_ptr是DDR存放读取数据的起始地址
+    status = XAxiDma_SimpleTransfer(&axidma0, (UINTPTR) rx0_buffer_ptr, MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);//rx0_buffer_ptr对应于RX0_BUFFER_BASE
+    status1 = XAxiDma_SimpleTransfer(&axidma1, (UINTPTR) rx1_buffer_ptr, MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+    if (status1 != XST_SUCCESS) {
+            return XST_FAILURE;
+        }
+    //本质是AXI4的传输通道，需要握手，因此不用担心同时开启读、写会出问题，当写没有完成时，读通道不会达成握手
+
+
+//刷新Data Cache（数据缓存）
+    Xil_DCacheFlushRange((UINTPTR) rx0_buffer_ptr, MAX_PKT_LEN);
+    Xil_DCacheFlushRange((UINTPTR) rx1_buffer_ptr, MAX_PKT_LEN);
+    while (!tx_0_done && !rx_0_done && !error0)
+      ;
+//判断传输是否出错
+    if (error0&&error1) {
+        xil_printf("Failed test transmit%s done, "
+                "receive%s done\r\n", tx_0_done ? "" : " not",
+                		rx_0_done ? "" : " not");
+        goto Done;
+    }
+
+    //传输完成，检查数据是否正确
+    status = check_data_dam0(MAX_PKT_LEN, TEST_START_VALUE);//读数据
+    if (status != XST_SUCCESS) {
+        xil_printf("Data check failed\r\n");
+        goto Done;   //goto语句
+    }
+    status1 = check_data_dam1(MAX_PKT_LEN, TEST_START_VALUE);//读数据
+    if (status1 != XST_SUCCESS) {
+            xil_printf("Data check failed1\r\n");
+            goto Done1;   //goto语句
+        }
+
+
+
+    xil_printf("Successfully ran AXI DMA Loop\r\n");
+    disable_intr_system(&intc, TX_INTR_0_ID, RX_INTR_0_ID);
+    disable_intr_system(&intc, TX_INTR_1_ID, RX_INTR_1_ID);
+
+    Done: xil_printf("--- DMA0_OK() --- \r\n");
+    Done1: xil_printf("---DMA1_OK() --- \r\n");
+    return XST_SUCCESS;
+}
+
+
+/**********************************自定义函数************************************/
+//check_data是检查数据缓冲区的函数的函数
+//  @param   length是待检查的数据长度
+//  @param   start_value是检查的第一个数据
+//  @return：返回int整型值
+static int check_data_dam0(int length, u8 start_value)
+{
+    u8 value;       //无符号的（8比特）变量
+    u8 *rx_packet;  //无符号的 （8比特）指针变量
+    int i = 0;
+
+    value = start_value;//把测试的初始值赋给value
+    rx_packet = (u8 *) RX0_BUFFER_BASE;//把DDR读缓存的地址赋值给rx_packet
+    for (i = 0; i < length; i++) {     //检查内存中的数据是否是0~255
+    	//如果读取的某一个数据与之前写入的测试数据不同，则打印出错信息"Data error"
+        if (rx_packet[i] != value) {
+            xil_printf("Data error %d: %x/%x\r\n", i, rx_packet[i], value);
+            return XST_FAILURE;
+        }
+        //否则继续测试下一个数，value+1用于测试下一个读取的数据
+        value = (value + 1) & 0xFF;//只取8位
+    }
+
+    return XST_SUCCESS;
+}
+static int check_data_dam1(int length, u8 start_value)
+{
+    u8 value;       //无符号的（8比特）变量
+    u8 *rx_packet;  //无符号的 （8比特）指针变量
+    int i = 0;
+
+    value = start_value;//把测试的初始值赋给value
+    rx_packet = (u8 *) RX1_BUFFER_BASE;//把DDR读缓存的地址赋值给rx_packet
+    for (i = 0; i < length; i++) {     //检查内存中的数据是否是0~255
+    	//如果读取的某一个数据与之前写入的测试数据不同，则打印出错信息"Data error"
+        if (rx_packet[i] != value) {
+            xil_printf("Data error %d: %x/%x\r\n", i, rx_packet[i], value);
+            return XST_FAILURE;
+        }
+        //否则继续测试下一个数，value+1用于测试下一个读取的数据
+        value = (value + 1) & 0xFF;//只取8位
+    }
+
+    return XST_SUCCESS;
+}
+
+//DMA0 TX中断处理函数 （发送完成后产生一个中断）
+static void tx_intr_handler(void *callback)
+{
+    int timeout;    //定义一个整型变量
+    u32 irq_status; //定义一个32位的无符号数变量
+    XAxiDma *axidma_inst = (XAxiDma *) callback;//把函数的形参 *callback赋值给结构体指针
+
+    //读取待处理的中断：XAxiDma_IntrGetIrq
+    irq_status = XAxiDma_IntrGetIrq(axidma_inst, XAXIDMA_DMA_TO_DEVICE);
+    //@param    驱动实例
+    //@param    DMA传输方向
+    //@return   待处理中断的位掩码
+
+    //确认待处理的中断
+    XAxiDma_IntrAckIrq(axidma_inst, irq_status, XAXIDMA_DMA_TO_DEVICE);
+    //@param    驱动实例
+    //@param    待处理中断的位掩码
+    //@param    DMA传输方向
+
+
+
+    //Tx出错，判断进入中断是否是出错导致的
+    if ((irq_status & XAXIDMA_IRQ_ERROR_MASK)) //XAXIDMA_IRQ_ERROR_MASK：错误中断的位掩码
+    {
+    	error0 = 1;
+        XAxiDma_Reset(axidma_inst);//对DMA驱动实例复位
+        timeout = RESET_TIMEOUT_COUNTER;////复位时间
+        while (timeout) {
+            if (XAxiDma_ResetIsDone(axidma_inst))
+                break;
+            timeout -= 1;//timeout-1
+        }
+        return;
+    }
+
+    //Tx完成
+    if ((irq_status & XAXIDMA_IRQ_IOC_MASK))    //如果是完成导致的中断，拉高tx_done
+    	tx_done = 1;
+}
+
+//DMA0 RX中断处理函数  (接收完成后发出一个中断)
+static void rx_intr_handler(void *callback)
+{
+    u32 irq_status;//用于保存位掩码
+    int timeout;   //用于保存复位时间
+    XAxiDma *axidma_inst = (XAxiDma *) callback;
+
+    //读取待处理的中断
+    irq_status = XAxiDma_IntrGetIrq(axidma_inst, XAXIDMA_DEVICE_TO_DMA);
+    //确认待处理的中断
+    XAxiDma_IntrAckIrq(axidma_inst, irq_status, XAXIDMA_DEVICE_TO_DMA);
+
+    //Rx出错 判断进入中断是否是出错导致的
+    if ((irq_status & XAXIDMA_IRQ_ERROR_MASK)) {
+    	error0 = 1;
+        XAxiDma_Reset(axidma_inst);
+        timeout = RESET_TIMEOUT_COUNTER;//复位时间
+        while (timeout) {
+            if (XAxiDma_ResetIsDone(axidma_inst))
+                break;
+            timeout -= 1;
+        }
+        return;
+    }
+
+    //Rx完成  //如果是完成导致的中断，拉高rx_done
+    if ((irq_status & XAXIDMA_IRQ_IOC_MASK))//XAXIDMA_IRQ_IOC_MASK完成传输产生的中断的掩码
+        rx_done = 1;
+}
+
+//setup_intr_system建立DMA中断系统的函数
+//  @param   int_ins_ptr是指向XScuGic实例的指针
+//  @param   AxiDmaPtr是指向DMA引擎实例的指针
+//  @param   tx_intr_id是TX通道中断ID
+//  @param   rx_intr_id是RX通道中断ID
+//  @return：成功返回XST_SUCCESS，否则返回XST_FAILURE
+static int setup_intr_system(XScuGic * int_ins_ptr, XAxiDma * axidma_ptr,
+        u16 tx_intr_id, u16 rx_intr_id)
+{
+////GIC配置
+    int status;
+    XScuGic_Config *intc_config;//定义一个指针结构体变量
+
+//查找中断控制器配置信息并初始化中断控制器驱动
+    intc_config = XScuGic_LookupConfig(INTC_DEVICE_0_ID);//寻找器件地址
+    // XScuGic_LookupConfig：根据唯一的设备 ID 查找设备配置。xparameters_ps.h中包含系统中每个设备的配置信息。
+
+    //判断是否找到器件
+    if (NULL == intc_config) {
+        return XST_FAILURE;
+    }
+
+    status = XScuGic_CfgInitialize(int_ins_ptr, intc_config,//初始化一个特定的中断控制器实例
+            intc_config->CpuBaseAddress);                   //CpuBaseAddress是结构体XScuGic_Config中的成员变量
+    //判断初始化是否成功，（自检）
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+//设置优先级和触发类型：设置特定 IRQ 源的中断优先级和触发器类型。
+    XScuGic_SetPriorityTriggerType(int_ins_ptr, tx_intr_id, 0xA0, 0x3);
+    XScuGic_SetPriorityTriggerType(int_ins_ptr, rx_intr_id, 0xA0, 0x3);
+
+//关联中断处理函数 将中断号跟中断处理函数连接起来
+    status = XScuGic_Connect(int_ins_ptr, tx_intr_id,
+            (Xil_InterruptHandler) tx_intr_handler, axidma_ptr);
+
+    //判断是否关联成功
+    if (status != XST_SUCCESS) {
+        return status;
+    }
+    status = XScuGic_Connect(int_ins_ptr, rx_intr_id,
+            (Xil_InterruptHandler) rx_intr_handler, axidma_ptr);
+    if (status != XST_SUCCESS) {
+        return status;
+    }
+
+    //为中断源打开中断，这里就是来自DMA的写中断和读中断
+    XScuGic_Enable(int_ins_ptr, tx_intr_id);
+    XScuGic_Enable(int_ins_ptr, rx_intr_id);
+
+    //设置并打开中断异常处理功能
+    Xil_ExceptionInit();//初始化ARM处理器异常句柄
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+            (Xil_ExceptionHandler) XScuGic_InterruptHandler,
+            (void *) int_ins_ptr);//来给IRQ异常注册处理程序
+    Xil_ExceptionEnable();
+
+    //为DMA器件使能中断
+    XAxiDma_IntrEnable(&axidma0, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+    XAxiDma_IntrEnable(&axidma0, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+
+    return XST_SUCCESS;
+}
+
+//此函数禁用DMA引擎的中断
+static void disable_intr_system(XScuGic * int_ins_ptr, u16 tx_intr_id,
+        u16 rx_intr_id)
+{
+	//取消关联中断控制器驱动与中断号
+    XScuGic_Disconnect(int_ins_ptr, tx_intr_id);
+    XScuGic_Disconnect(int_ins_ptr, rx_intr_id);
+}
+
+
+
+

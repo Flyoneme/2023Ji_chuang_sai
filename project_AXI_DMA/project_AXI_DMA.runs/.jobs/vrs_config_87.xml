@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_key_debounce_0_1_synth_1" LaunchDir="E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/system_key_debounce_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_data_status_0_1_synth_1" LaunchDir="E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/system_data_status_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

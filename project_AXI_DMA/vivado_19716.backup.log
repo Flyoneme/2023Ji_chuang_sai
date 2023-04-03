@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Mar 28 10:39:41 2023
+# Process ID: 19716
+# Current directory: E:/project_AXI_DMA -V1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15580 E:\project_AXI_DMA -V1.0\project_AXI_DMA.xpr
+# Log file: E:/project_AXI_DMA -V1.0/vivado.log
+# Journal file: E:/project_AXI_DMA -V1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/project_AXI_DMA -V1.0/project_AXI_DMA.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/project_AXI_DMA' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'E:/../../../../../ip_repo/data_status_1.0'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'E:/../../../../../ip_repo/data_status_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_AXI_DMA -V1.0/ip_repo/data_status_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'ip_repo/data_status_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project_AXI_DMA -V1.0/ip_repo/data_status_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/fix_vivado/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 986.199 ; gain = 196.254
+open_bd_design {E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_1
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:module_ref:key_debounce:1.0 - key_debounce_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_1
+Adding cell -- xilinx.com:user:data_status:1.0 - data_status_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc1
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc2
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1045.770 ; gain = 59.570
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.C_OPERATION {or} CONFIG.LOGO_FILE {data/sym_orgate.png}] [get_bd_cells util_vector_logic_0]
+endgroup
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /key_debounce_0/sys_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_processing_system7_0_0_FCLK_CLK0 
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1239.812 ; gain = 146.039
+make_wrapper -files [get_files {{E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}}] -top
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/hdl/system_wrapper.v
+generate_target all [get_files  {{E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}}]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0.hwh
+Generated Block Design Tcl file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0_bd.tcl
+Generated Hardware Definition File e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/synth/system_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block key_debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_status_0 .
+Exporting to file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/hw_handoff/system_axi_smc_2.hwh
+Generated Block Design Tcl file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/hw_handoff/system_axi_smc_2_bd.tcl
+Generated Hardware Definition File e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc_2/bd_0/synth/system_axi_smc_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc1 .
+Exporting to file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc1_0/bd_0/hw_handoff/system_axi_smc1_0.hwh
+Generated Block Design Tcl file e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc1_0/bd_0/hw_handoff/system_axi_smc1_0_bd.tcl
+Generated Hardware Definition File e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_axi_smc1_0/bd_0/synth/system_axi_smc1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1623.156 ; gain = 266.809
+catch { config_ip_cache -export [get_ips -all system_util_vector_logic_0_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = 36e686f45dee0df1; cache size = 60.809 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 36e686f45dee0df1; cache size = 60.809 MB.
+export_ip_user_files -of_objects [get_files {{E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}}]
+launch_runs -jobs 16 system_util_vector_logic_0_0_synth_1
+[Tue Mar 28 10:43:31 2023] Launched system_util_vector_logic_0_0_synth_1...
+Run output will be captured here: E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/system_util_vector_logic_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}}] -directory {E:/project_AXI_DMA -V1.0/project_AXI_DMA.ip_user_files/sim_scripts} -ip_user_files_dir {E:/project_AXI_DMA -V1.0/project_AXI_DMA.ip_user_files} -ipstatic_source_dir {E:/project_AXI_DMA -V1.0/project_AXI_DMA.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/project_AXI_DMA -V1.0/project_AXI_DMA.cache/compile_simlib/modelsim} {questa=E:/project_AXI_DMA -V1.0/project_AXI_DMA.cache/compile_simlib/questa} {riviera=E:/project_AXI_DMA -V1.0/project_AXI_DMA.cache/compile_simlib/riviera} {activehdl=E:/project_AXI_DMA -V1.0/project_AXI_DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {E:/project_AXI_DMA -V1.0/project_AXI_DMA.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Mar 28 10:44:34 2023] Launched synth_1...
+Run output will be captured here: E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/synth_1/runme.log
+[Tue Mar 28 10:44:35 2023] Launched impl_1...
+Run output will be captured here: E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 505 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2647.914 ; gain = 1.035
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2647.914 ; gain = 1.035
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 249 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 247 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 2755.629 ; gain = 1111.199
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2930.488 ; gain = 154.574
+launch_sdk -workspace {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk} -hwspec {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk -hwspec E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk} -hwspec {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk -hwspec E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk} -hwspec {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk -hwspec E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force {E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/impl_1/system_wrapper.sysdef} {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf}
+
+launch_sdk -workspace {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk} -hwspec {E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk -hwspec E:/project_AXI_DMA -V1.0/project_AXI_DMA.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 10:54:08 2023...
