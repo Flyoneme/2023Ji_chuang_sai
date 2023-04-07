@@ -10,7 +10,7 @@
 
 
 		// Parameters of Axi Master Bus Interface M0_AXI
-		parameter  C_M0_AXI_TARGET_SLAVE_BASE_ADDR	= 32'h40000000,
+		parameter  C_M0_AXI_TARGET_SLAVE_BASE_ADDR	= 32'h30000000,
 		parameter integer C_M0_AXI_BURST_LEN	= 16,
 		parameter integer C_M0_AXI_ID_WIDTH	= 1,
 		parameter integer C_M0_AXI_ADDR_WIDTH	= 32,

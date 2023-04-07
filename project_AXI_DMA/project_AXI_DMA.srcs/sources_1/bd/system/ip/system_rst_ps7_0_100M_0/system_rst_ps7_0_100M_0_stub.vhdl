@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Sat Jan 14 15:47:30 2023
+-- Date        : Thu Apr  6 10:41:45 2023
 -- Host        : DESKTOP-RI36TSC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_rst_ps7_0_100M_0 -prefix
---               system_rst_ps7_0_100M_0_ system_rst_ps7_0_100M_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               E:/work/project_AXI_DMA/project_AXI_DMA.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_stub.vhdl
 -- Design      : system_rst_ps7_0_100M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2

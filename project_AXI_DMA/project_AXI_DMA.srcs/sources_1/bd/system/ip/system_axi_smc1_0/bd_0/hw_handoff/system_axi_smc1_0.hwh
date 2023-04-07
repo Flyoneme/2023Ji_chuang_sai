@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 28 11:45:54 2023" VIVADOVERSION="2018.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr  6 10:47:39 2023" VIVADOVERSION="2018.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_b049" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+    <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
       <CONNECTIONS>
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aclk"/>
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aclk"/>
@@ -106,7 +106,7 @@
     <BUSINTERFACE BUSNAME="External_Interface_S00_AXI" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE">
       <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
       <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
       <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
       <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
       <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -179,7 +179,7 @@
     <BUSINTERFACE BUSNAME="m00_exit_pipeline_m00_exit_M_AXI" DATAWIDTH="64" NAME="M00_AXI" TYPE="MASTER">
       <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
       <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
       <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
       <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
       <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -283,7 +283,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -646,7 +646,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -884,7 +884,7 @@
         <BUSINTERFACE BUSNAME="m00_sc2axi_M_AXI" DATAWIDTH="64" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -956,7 +956,7 @@
         <BUSINTERFACE BUSNAME="m00_exit_pipeline_m00_exit_M_AXI" DATAWIDTH="64" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1067,7 +1067,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -1437,7 +1437,7 @@
         <BUSINTERFACE BUSNAME="m00_sc2axi_M_AXI" DATAWIDTH="64" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -1553,7 +1553,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -1923,7 +1923,7 @@
         <BUSINTERFACE BUSNAME="s00_entry_pipeline_s00_si_converter_M_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -2004,7 +2004,7 @@
         <PARAMETER NAME="C_ENABLE_PIPELINING" VALUE="0x1"/>
         <PARAMETER NAME="C_NUM_SEG" VALUE="1"/>
         <PARAMETER NAME="C_SEG_BASE_ADDR_ARRAY" VALUE="0x0000000030000000"/>
-        <PARAMETER NAME="C_SEG_SIZE_ARRAY" VALUE="0x00000017"/>
+        <PARAMETER NAME="C_SEG_SIZE_ARRAY" VALUE="0x0000001c"/>
         <PARAMETER NAME="C_SEG_SEP_ROUTE_ARRAY" VALUE="0x0000000000000000"/>
         <PARAMETER NAME="C_SEG_SUPPORTS_READ_ARRAY" VALUE="0x1"/>
         <PARAMETER NAME="C_SEG_SUPPORTS_WRITE_ARRAY" VALUE="0x1"/>
@@ -2053,7 +2053,7 @@
         <PARAMETER NAME="WRITE_ACCEPTANCE" VALUE="32"/>
         <PARAMETER NAME="SINGLE_ISSUING" VALUE="0"/>
         <PARAMETER NAME="SEG000_BASE_ADDR" VALUE="0x0000000030000000"/>
-        <PARAMETER NAME="SEG000_SIZE" VALUE="23"/>
+        <PARAMETER NAME="SEG000_SIZE" VALUE="28"/>
         <PARAMETER NAME="SEG000_SEP_ROUTE" VALUE="0b0000000000000000000000000000000000000000000000000000000000000000"/>
         <PARAMETER NAME="SEG000_SUPPORTS_READ" VALUE="1"/>
         <PARAMETER NAME="SEG000_SUPPORTS_WRITE" VALUE="1"/>
@@ -3912,7 +3912,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -4174,7 +4174,7 @@
         <BUSINTERFACE BUSNAME="External_Interface_S00_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -4245,7 +4245,7 @@
         <BUSINTERFACE BUSNAME="s00_entry_pipeline_s00_mmu_M_AXI" DATAWIDTH="32" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -5280,7 +5280,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -5686,7 +5686,7 @@
           <PARAMETER NAME="BRIDGES" VALUE="M_AXI"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -5760,7 +5760,7 @@
         <BUSINTERFACE BUSNAME="s00_entry_pipeline_s00_si_converter_M_AXI" DATAWIDTH="32" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -5877,7 +5877,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6305,7 +6305,7 @@
           <PARAMETER NAME="BRIDGES" VALUE="M_AXI"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -6381,7 +6381,7 @@
         <BUSINTERFACE BUSNAME="s00_entry_pipeline_s00_transaction_regulator_M_AXI" DATAWIDTH="32" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="3"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="1024"/>
@@ -6548,7 +6548,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6583,7 +6583,7 @@
             <CONNECTION INSTANCE="s00_axi2sc" PORT="m_sc_ar_payld"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6732,7 +6732,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6767,7 +6767,7 @@
             <CONNECTION INSTANCE="s00_axi2sc" PORT="m_sc_aw_payld"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6916,7 +6916,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -6951,7 +6951,7 @@
             <CONNECTION INSTANCE="m00_sc2axi" PORT="m_sc_b_payld"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -7100,7 +7100,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -7135,7 +7135,7 @@
             <CONNECTION INSTANCE="m00_sc2axi" PORT="m_sc_r_payld"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -7284,7 +7284,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>
@@ -7319,7 +7319,7 @@
             <CONNECTION INSTANCE="s00_axi2sc" PORT="m_sc_w_payld"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
           </CONNECTIONS>

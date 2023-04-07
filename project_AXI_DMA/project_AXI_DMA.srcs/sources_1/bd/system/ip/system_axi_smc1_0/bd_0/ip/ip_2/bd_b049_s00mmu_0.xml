@@ -406,7 +406,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1023,7 +1023,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1296,7 +1296,7 @@
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:displayName>aclk frequency</spirit:displayName>
           <spirit:description>aclk frequency</spirit:description>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ" spirit:minimum="1" spirit:maximum="1000000000" spirit:rangeType="long">1e+08</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
@@ -1391,11 +1391,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:38 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:28 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:30aaae56</spirit:value>
+            <spirit:value>8:5eb06a8c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1406,7 +1406,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:30aaae56</spirit:value>
+            <spirit:value>8:5eb06a8c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1422,11 +1422,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:53 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:39 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:30aaae56</spirit:value>
+            <spirit:value>8:5eb06a8c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1445,11 +1445,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:38 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:28 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7dde2164</spirit:value>
+            <spirit:value>8:5001af6d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1465,11 +1465,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:54 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:39 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:7dde2164</spirit:value>
+            <spirit:value>8:5001af6d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3629,7 +3629,7 @@
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SIZE_ARRAY</spirit:name>
         <spirit:displayName>C_SEG_SIZE_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="32">0x00000017</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEG_SIZE_ARRAY" spirit:bitStringLength="32">0x0000001c</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitstring">
         <spirit:name>C_SEG_SEP_ROUTE_ARRAY</spirit:name>
@@ -3998,7 +3998,7 @@
     <spirit:parameter>
       <spirit:name>SEG000_SIZE</spirit:name>
       <spirit:displayName>SEG000_SIZE</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_SIZE">23</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEG000_SIZE">28</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEG000_SEP_ROUTE</spirit:name>

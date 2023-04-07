@@ -434,7 +434,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.ACLK.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -550,7 +550,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SC_ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SC_ACLK.FREQ_HZ">1e+08</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -653,11 +653,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:36 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:26 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:4911fd5a</spirit:value>
+            <spirit:value>8:3c2904f2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -673,11 +673,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:46 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:33 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:4911fd5a</spirit:value>
+            <spirit:value>8:3c2904f2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -696,11 +696,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:36 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:26 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c2341fec</spirit:value>
+            <spirit:value>8:85ead452</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -716,11 +716,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 28 03:45:46 UTC 2023</spirit:value>
+            <spirit:value>Thu Apr 06 02:47:33 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:c2341fec</spirit:value>
+            <spirit:value>8:85ead452</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>

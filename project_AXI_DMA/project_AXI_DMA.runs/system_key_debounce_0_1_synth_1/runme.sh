@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/project_AXI_DMA -V1.0/project_AXI_DMA.runs/system_key_debounce_0_1_synth_1'
+HD_PWD='E:/work/project_AXI_DMA/project_AXI_DMA.runs/system_key_debounce_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

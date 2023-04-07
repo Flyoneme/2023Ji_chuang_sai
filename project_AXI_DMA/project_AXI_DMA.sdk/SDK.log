@@ -112,3 +112,10 @@ con
 ----------------End of Script----------------
 
 13:27:32 INFO  : Launch script is exported to file 'E:\work\project_AXI_DMA\project_AXI_DMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_dma.elf_on_local.tcl'
+09:20:46 INFO  : Registering command handlers for SDK TCF services
+09:20:47 INFO  : Launching XSCT server: xsct.bat -interactive E:\work\project_AXI_DMA\project_AXI_DMA.sdk\temp_xsdb_launch_script.tcl
+09:20:50 INFO  : XSCT server has started successfully.
+09:20:54 INFO  : Successfully done setting XSCT server connection channel  
+09:20:54 INFO  : Successfully done setting SDK workspace  
+09:20:54 INFO  : Processing command line option -hwspec E:/work/project_AXI_DMA/project_AXI_DMA.sdk/system_wrapper.hdf.
+09:20:54 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.

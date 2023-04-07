@@ -1,6 +1,38 @@
 #ifndef XPARAMETERS_H   /* prevent circular inclusions */
 #define XPARAMETERS_H   /* by using protection macros */
 
+//DMA0
+ /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 61U
+#define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 62U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
+#define XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR
+
+//DM1
+#define XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR 63U
+#define XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR 64U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_AXIDMA_1_MM2S_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
+#define XPAR_FABRIC_AXIDMA_1_S2MM_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR
+
+
+
+
+
+
+
+
+
+
+
+
 /* Definition for CPU ID */
 #define XPAR_CPU_ID 0U
 
@@ -22,22 +54,7 @@
 #define STDOUT_BASEADDRESS 0xE0000000
 
 /******************************************************************/
-/******************************************************************/
-//后加的参数
-//******************************************************************
-/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
-#define XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR
-/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR 61U
-#define XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR 62U
 
-#define XPAR_FABRIC_AXIDMA_1_MM2S_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
-#define XPAR_FABRIC_AXIDMA_1_S2MM_INTROUT_VEC_ID XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR
-/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR 63U
-#define XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR 64U
-//*******************************************************************
 /* Platform specific definitions */
 #define PLATFORM_ZYNQ
  

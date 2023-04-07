@@ -89,6 +89,9 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axi_smc_0/bd_0/sim/bd_44e3.v" \
+-endlib
 -makelib xcelium_lib/smartconnect_v1_0 -sv \
   "../../../../project_AXI_DMA.srcs/sources_1/bd/system/ipshared/786b/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
 -endlib
@@ -164,7 +167,6 @@
   "../../../bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/sim/bd_44e3_psr_aclk_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_axi_smc_0/bd_0/sim/bd_44e3.v" \
   "../../../bd/system/ip/system_axi_smc_0/sim/system_axi_smc_0.v" \
   "../../../bd/system/ip/system_axis_data_fifo_0_1/sim/system_axis_data_fifo_0_1.v" \
 -endlib
@@ -196,9 +198,7 @@
   "../../../bd/system/ip/system_util_vector_logic_0_0/sim/system_util_vector_logic_0_0.v" \
   "../../../bd/system/ip/system_key_debounce_0_1/sim/system_key_debounce_0_1.v" \
   "../../../bd/system/ip/system_util_vector_logic_0_2/sim/system_util_vector_logic_0_2.v" \
-  "../../../bd/system/ipshared/42bd/hdl/data_status_v1_0_M0_AXI.v" \
-  "../../../bd/system/ipshared/42bd/hdl/data_status_v1_0.v" \
-  "../../../bd/system/ip/system_data_status_0_1/sim/system_data_status_0_1.v" \
+  "../../../bd/system/ip/system_axi_smc_2/bd_0/sim/bd_8562.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/system/ip/system_axi_smc_2/bd_0/ip/ip_10/sim/bd_8562_s00a2s_0.sv" \
@@ -234,8 +234,8 @@
   "../../../bd/system/ip/system_axi_smc_2/bd_0/ip/ip_1/sim/bd_8562_psr_aclk_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_axi_smc_2/bd_0/sim/bd_8562.v" \
   "../../../bd/system/ip/system_axi_smc_2/sim/system_axi_smc_2.v" \
+  "../../../bd/system/ip/system_axi_smc1_0/bd_0/sim/bd_b049.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
   "../../../bd/system/ip/system_axi_smc1_0/bd_0/ip/ip_5/sim/bd_b049_s00a2s_0.sv" \
@@ -257,8 +257,26 @@
   "../../../bd/system/ip/system_axi_smc1_0/bd_0/ip/ip_1/sim/bd_b049_psr_aclk_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/system/ip/system_axi_smc1_0/bd_0/sim/bd_b049.v" \
   "../../../bd/system/ip/system_axi_smc1_0/sim/system_axi_smc1_0.v" \
+  "../../../bd/system/sim/system.v" \
+  "../../../bd/system/ipshared/42bd/hdl/data_status_v1_0_M0_AXI.v" \
+  "../../../bd/system/ipshared/42bd/hdl/data_status_v1_0.v" \
+  "../../../bd/system/ip/system_data_status_1_0/sim/system_data_status_1_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_0/sim/bd_1579_ila_lib_0.v" \
+-endlib
+-makelib xcelium_lib/gigantic_mux \
+  "../../../../project_AXI_DMA.srcs/sources_1/bd/system/ipshared/d322/hdl/gigantic_mux_v1_0_cntr.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_1/bd_1579_g_inst_0_gigantic_mux.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_1/sim/bd_1579_g_inst_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_2/sim/bd_1579_slot_0_aw_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_3/sim/bd_1579_slot_0_w_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_4/sim/bd_1579_slot_0_b_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_5/sim/bd_1579_slot_0_ar_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_6/sim/bd_1579_slot_0_r_0.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/bd_0/sim/bd_1579.v" \
+  "../../../bd/system/ip/system_system_ila_0_1/sim/system_system_ila_0_1.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_16 \
   "../../../../project_AXI_DMA.srcs/sources_1/bd/system/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -266,7 +284,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
   "../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
-  "../../../bd/system/sim/system.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

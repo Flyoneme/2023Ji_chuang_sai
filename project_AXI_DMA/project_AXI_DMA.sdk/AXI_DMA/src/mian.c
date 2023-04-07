@@ -4,13 +4,19 @@
  *  Created on: 2023年3月28日
  *      Author: PC
  */
-/***********头文件****************/
+/***********DMA环路头文件****************/
 #include "xaxidma.h"
 #include "xparameters.h"
 #include "xil_exception.h"
 #include "xscugic.h"
+/***********状态读取头文件****************/
+#include "stdio.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+
 /***********实验任务**************/
-//配置两个DMA
+//配置两个DMA环路+状态读取
 /*****************************系统参数********************************/
 #define RESET_TIMEOUT_COUNTER   10000                                 //复位时间
 #define TEST_START_VALUE        0x00                                  //测试起始值1
@@ -250,6 +256,27 @@ int main(void)
 
     Done: xil_printf("--- DMA0_OK() --- \r\n");
     Done1: xil_printf("---DMA1_OK() --- \r\n");
+
+
+//读取数据状态
+    int k;
+    	char c;
+    	Xil_DCacheDisable();//禁用DDR的cache缓存
+    	printf("AXI4 PL DDR TEST!\n\r");
+    	while(1)
+    	{
+    		scanf("%c",&c);
+    		if(c == 'c'){
+    			printf("start\r\n");
+    			for(k=0;k<4096;k=k+4)
+    			{
+    				printf("%d is %d\n",k,(int)(Xil_In32(0x30000000+k)));//Xil_In32读DDR的函数,0x30000000地址要与IP参数一致
+    			}
+    		}
+    	}
+
+
+
     return XST_SUCCESS;
 }
 

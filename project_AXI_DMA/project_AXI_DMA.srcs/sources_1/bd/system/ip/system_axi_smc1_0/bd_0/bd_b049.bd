@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x604098B00D39B711" bd:bdsource="SBD" bd:device="xc7z020clg400-2" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="bd_b049" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x604098B061B190AC" bd:bdsource="SBD" bd:device="xc7z020clg400-2" bd:isScoped="true" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="bd_b049" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -39,7 +39,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>100000000</spirit:value>
+            <spirit:value>1e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -317,7 +317,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>100000000</spirit:value>
+            <spirit:value>1e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -347,7 +347,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
+                <bd:configElementInfo bd:valueSource="default_prop"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -356,7 +356,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
+                <bd:configElementInfo bd:valueSource="default_prop"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -383,7 +383,7 @@
             <spirit:value>0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
+                <bd:configElementInfo bd:valueSource="default_prop"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -589,7 +589,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
-            <spirit:value>100000000</spirit:value>
+            <spirit:value>1e+08</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="user_prop"/>
@@ -1666,7 +1666,7 @@
           <spirit:configurableElementValue spirit:referenceId="S_PROTOCOL">AXI4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_BASE_ADDR">0x0000000030000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG000_SIZE">23</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SEG000_SIZE">28</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SUPPORTS_READ">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SUPPORTS_WRITE">1</spirit:configurableElementValue>

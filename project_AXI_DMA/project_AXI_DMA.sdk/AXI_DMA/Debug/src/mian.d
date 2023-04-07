@@ -20,7 +20,10 @@ src/mian.o src/mian.o: ../src/mian.c \
  ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_exception.h \
  ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xscugic.h \
  ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
- ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_exception.h
+ ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_exception.h \
+ ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_cache.h \
+ ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_printf.h \
+ ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_io.h
 
 ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xaxidma.h:
 
@@ -65,3 +68,9 @@ src/mian.o src/mian.o: ../src/mian.c \
 ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xscugic_hw.h:
 
 ../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_exception.h:
+
+../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_cache.h:
+
+../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_printf.h:
+
+../../AXI_DMA_bsp/ps7_cortexa9_0/include/xil_io.h:
